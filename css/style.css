@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.bg-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/car.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 62rem;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 0;
+}
+
+.head__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.head__logo img {
+  width: 38px;
+}
+
+.head__logo h1 {
+  font-size: 18px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  color: #ee0404;
+  margin-left: 10px;
+}
+
+.head__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.head__menu ul li a {
+  display: block;
+  padding: 0 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #111;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.head__menu ul li a:hover {
+  color: #fff;
+}
+
+.head__menu ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ee0404;
+  z-index: -1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.head__menu ul li a:hover::before {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.page-intro {
+  max-width: 430px;
+  padding-top: 20px;
+}
+
+.page-intro__text {
+  padding-left: 50px;
+}
+
+.page-intro__text h4 {
+  font-size: 32px;
+  color: #ee0404;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.page-intro__text h2 {
+  font-size: 44px;
+  color: #8ea0fe;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.page-intro__text h5 {
+  font-size: 20px;
+  color: #ee0404;
+  font-weight: 700;
+}
+
+.page-intro__text p {
+  color: #8ea0fe;
+  font-size: 16px;
+  font-weight: 300;
+  padding-right: 20px;
+  margin: 30px 0 20px;
+}
+
+.page-intro__text a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 18px 40px;
+  color: #778dfd;
+  border: 1px solid #778dfd;
+  letter-spacing: 1;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.page-intro__text a:hover {
+  border-color: transparent;
+  color: #fff;
+}
+
+.page-intro__text a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ee0404), to(#8ea0fe));
+  background: linear-gradient(to right, #ee0404, #8ea0fe);
+  z-index: -1;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  border-radius: 5px;
+}
+
+.page-intro__text a:hover::before {
+  -webkit-transition: tranform .5s;
+  transition: tranform .5s;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.page-intro__icon {
+  margin-top: 20px;
+}
+
+.page-intro__icon img {
+  width: 38px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
